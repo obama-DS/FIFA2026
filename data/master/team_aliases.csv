@@ -1,0 +1,40 @@
+﻿team_id,alias,source
+1,Arsenal,"E0,fixtures,players"
+2,Aston Villa,"E0,fixtures,players"
+3,Bournemouth,"E0,fixtures,players"
+4,Brentford,"E0,fixtures,players"
+5,Brighton,"E0,fixtures,players"
+6,Burnley,"E0,players"
+7,Cardiff,E0
+8,Chelsea,"E0,fixtures,players"
+9,Coventry,fixtures
+10,Crystal Palace,"E0,fixtures,players"
+11,Everton,"E0,fixtures,players"
+12,Fulham,"E0,fixtures,players"
+13,Huddersfield,E0
+14,Hull,fixtures
+15,Ipswich,"E0,fixtures"
+16,Leeds,"E0,fixtures"
+16,Leeds United,players
+17,Leicester,E0
+18,Liverpool,"E0,fixtures,players"
+19,Luton,E0
+20,Man City,"E0,fixtures"
+20,Manchester City,players
+21,Man United,E0
+21,Man Utd,fixtures
+21,Manchester Utd,players
+22,Newcastle,"E0,fixtures"
+22,Newcastle Utd,players
+23,Norwich,E0
+24,Nott'ham Forest,players
+24,Nott'm Forest,"E0,fixtures"
+25,Sheffield United,E0
+26,Southampton,E0
+27,Spurs,fixtures
+27,Tottenham,"E0,players"
+28,Sunderland,"E0,fixtures,players"
+29,Watford,E0
+30,West Brom,E0
+31,West Ham,"E0,players"
+32,Wolves,"E0,players"

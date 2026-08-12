@@ -1,0 +1,33 @@
+﻿team_id,team_name,team_full_name,home_stadium,in_2026_27,first_season,last_season,n_seasons
+1,Arsenal,Arsenal,Emirates Stadium,True,2018/19,2025/26,8
+2,Aston Villa,Aston Villa,Villa Park,True,2019/20,2025/26,7
+3,Bournemouth,AFC Bournemouth,Vitality Stadium,True,2018/19,2025/26,6
+4,Brentford,Brentford,Gtech Community Stadium,True,2021/22,2025/26,5
+5,Brighton,Brighton & Hove Albion,American Express Stadium,True,2018/19,2025/26,8
+6,Burnley,Burnley,,False,2018/19,2025/26,6
+7,Cardiff,Cardiff City,,False,2018/19,2018/19,1
+8,Chelsea,Chelsea,Stamford Bridge,True,2018/19,2025/26,8
+9,Coventry,Coventry City,Coventry Building Society Arena,True,,,0
+10,Crystal Palace,Crystal Palace,Selhurst Park,True,2018/19,2025/26,8
+11,Everton,Everton,Hill Dickinson Stadium,True,2018/19,2025/26,8
+12,Fulham,Fulham,Craven Cottage,True,2018/19,2025/26,6
+13,Huddersfield,Huddersfield Town,,False,2018/19,2018/19,1
+14,Hull,Hull City,MKM Stadium,True,,,0
+15,Ipswich,Ipswich Town,Portman Road,True,2024/25,2024/25,1
+16,Leeds,Leeds United,Elland Road,True,2020/21,2025/26,4
+17,Leicester,Leicester City,,False,2018/19,2024/25,6
+18,Liverpool,Liverpool,Anfield,True,2018/19,2025/26,8
+19,Luton,Luton Town,,False,2023/24,2023/24,1
+20,Man City,Manchester City,Etihad Stadium,True,2018/19,2025/26,8
+21,Man United,Manchester United,Old Trafford,True,2018/19,2025/26,8
+22,Newcastle,Newcastle United,St. James' Park,True,2018/19,2025/26,8
+23,Norwich,Norwich City,,False,2019/20,2021/22,2
+24,Nott'm Forest,Nottingham Forest,The City Ground,True,,,0
+25,Sheffield United,Sheffield United,,False,2019/20,2023/24,3
+26,Southampton,Southampton,,False,2018/19,2024/25,6
+27,Tottenham,Tottenham Hotspur,Tottenham Hotspur Stadium,True,,,0
+28,Sunderland,Sunderland,Stadium of Light,True,2025/26,2025/26,1
+29,Watford,Watford,,False,2018/19,2021/22,3
+30,West Brom,West Bromwich Albion,,False,2020/21,2020/21,1
+31,West Ham,West Ham United,,False,2018/19,2025/26,8
+32,Wolves,Wolverhampton Wanderers,,False,2018/19,2025/26,8

@@ -1,0 +1,37 @@
+﻿category,check,status,detail
+key,teams_master team_id unique,PASS,32 teams
+key,teams_master team_name unique,PASS,
+key,team_aliases reference valid team_id,PASS,39 aliases
+key,alias -> canonical consistency,PASS,
+entity,teams in 2026/27 fixtures,INFO,20 of 32
+key,matches_master match_id unique,PASS,3040 matches
+completeness,380 matches per season,PASS,"2018/19:380, 2019/20:380, 2020/21:380, 2021/22:380, 2022/23:380, 2023/24:380, 2024/25:380, 2025/26:380"
+key,"match identity (season, date, home, away) unique",PASS,
+match-rate,matches home_team_id -> teams,PASS,3040/3040 = 100.0%
+match-rate,matches away_team_id -> teams,PASS,3040/3040 = 100.0%
+quality,"result values in {H, D, A}",PASS,0 bad rows
+quality,no negative goal counts,PASS,
+key,match_odds match_id references matches,PASS,"3040 odds rows, 3040 matches covered"
+key,fixtures fixture_id unique,PASS,380 fixtures
+key,fixtures match_number unique,PASS,
+match-rate,fixtures home_team_id -> teams,PASS,380/380 = 100.0%
+match-rate,fixtures away_team_id -> teams,PASS,380/380 = 100.0%
+completeness,38 rounds x 10 fixtures,PASS,
+key,players_master player_id unique,PASS,404 players
+quality,player names unique (limitation: no stable ID),WARN,4 rows share a name
+match-rate,players team_id -> teams,PASS,404/404 = 100.0%
+match-rate,player_season_stats player_id -> players_master,PASS,404/404 = 100.0%
+key,"player_season_stats (player_id, season) unique",PASS,"404 player-seasons, seasons=['2025/26']"
+match-rate,player_season_stats team_id -> teams,PASS,404/404 = 100.0%
+key,"team_season_stats (team_id, season) unique",PASS,160 team-seasons
+match-rate,team_season_stats team_id -> teams,PASS,160/160 = 100.0%
+quality,points == 3*wins + draws,PASS,0 bad rows
+quality,mp == wins + draws + losses,PASS,
+completeness,each team-season has 38 games,PASS,all 38
+match-rate,matches -> teams,PASS,3040/3040 = 100.0%
+match-rate,fixtures -> teams,PASS,380/380 = 100.0%
+match-rate,fixtures -> teams (away),PASS,380/380 = 100.0%
+match-rate,players -> teams,PASS,404/404 = 100.0%
+match-rate,player-season stats -> teams,PASS,404/404 = 100.0%
+entity,teams with no match rows in 2018/19-2025/26,INFO,"Coventry, Hull"
+entity,teams with no player rows (2025/26),INFO,"Cardiff, Coventry, Huddersfield, Hull, Ipswich, Leicester, Luton, Norwich, Sheffield United, Southampton, Watford, West Brom"

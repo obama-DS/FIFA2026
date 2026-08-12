@@ -1,0 +1,405 @@
+﻿player_id,player_name,nation,birth_year,position,primary_position,team_id,team_name,comp
+1,Ben White,eng ENG,1997.0,DF,DF,1,Arsenal,eng Premier League
+2,Bukayo Saka,eng ENG,2001.0,FW,FW,1,Arsenal,eng Premier League
+3,Cristhian Mosquera,es ESP,2004.0,DF,DF,1,Arsenal,eng Premier League
+4,David Raya,es ESP,1995.0,GK,GK,1,Arsenal,eng Premier League
+5,Declan Rice,eng ENG,1999.0,MF,MF,1,Arsenal,eng Premier League
+6,Eberechi Eze,eng ENG,1998.0,FW,FW,1,Arsenal,eng Premier League
+7,Ethan Nwaneri,eng ENG,2007.0,MF,MF,1,Arsenal,eng Premier League
+8,Gabriel Magalhães,br BRA,1997.0,DF,DF,1,Arsenal,eng Premier League
+9,Gabriel Martinelli,br BRA,2001.0,FW,FW,1,Arsenal,eng Premier League
+10,Jurriën Timber,nl NED,2001.0,DF,DF,1,Arsenal,eng Premier League
+11,Kai Havertz,de GER,1999.0,FW,FW,1,Arsenal,eng Premier League
+12,Leandro Trossard,be BEL,1994.0,FW,FW,1,Arsenal,eng Premier League
+13,Martin Ødegaard,no NOR,1998.0,MF,MF,1,Arsenal,eng Premier League
+14,Martín Zubimendi,es ESP,1999.0,MF,MF,1,Arsenal,eng Premier League
+15,Max Dowman,eng ENG,2009.0,FW,FW,1,Arsenal,eng Premier League
+16,Mikel Merino,es ESP,1996.0,"MF,FW",MF,1,Arsenal,eng Premier League
+17,Myles Lewis-Skelly,eng ENG,2006.0,DF,DF,1,Arsenal,eng Premier League
+18,Noni Madueke,eng ENG,2002.0,FW,FW,1,Arsenal,eng Premier League
+19,Riccardo Calafiori,it ITA,2002.0,DF,DF,1,Arsenal,eng Premier League
+20,Viktor Gyökeres,se SWE,1998.0,FW,FW,1,Arsenal,eng Premier League
+21,William Saliba,fr FRA,2001.0,DF,DF,1,Arsenal,eng Premier League
+22,Amadou Onana,be BEL,2001.0,MF,MF,2,Aston Villa,eng Premier League
+23,Boubacar Kamara,fr FRA,1999.0,"MF,DF",MF,2,Aston Villa,eng Premier League
+24,Bradley Paul Burrowes,eng ENG,2008.0,DF,DF,2,Aston Villa,eng Premier League
+25,Donyell Malen,nl NED,1999.0,"FW,MF",FW,2,Aston Villa,eng Premier League
+26,Emi Buendía,ar ARG,1996.0,"MF,FW",MF,2,Aston Villa,eng Premier League
+27,Emiliano Martínez,ar ARG,1992.0,GK,GK,2,Aston Villa,eng Premier League
+28,Evann Guessand,ci CIV,2001.0,"FW,MF",FW,2,Aston Villa,eng Premier League
+29,Ezri Konsa,eng ENG,1997.0,DF,DF,2,Aston Villa,eng Premier League
+30,Harvey Elliott,eng ENG,2003.0,"MF,FW",MF,2,Aston Villa,eng Premier League
+31,Ian Maatsen,nl NED,2002.0,DF,DF,2,Aston Villa,eng Premier League
+32,John McGinn,sct SCO,1994.0,"FW,MF",FW,2,Aston Villa,eng Premier League
+33,Lamare Bogarde,nl NED,2004.0,MF,MF,2,Aston Villa,eng Premier League
+34,Lucas Digne,fr FRA,1993.0,DF,DF,2,Aston Villa,eng Premier League
+35,Marco Bizot,nl NED,1991.0,GK,GK,2,Aston Villa,eng Premier League
+36,Matty Cash,pl POL,1997.0,DF,DF,2,Aston Villa,eng Premier League
+37,Morgan Rogers,eng ENG,2002.0,"FW,MF",FW,2,Aston Villa,eng Premier League
+38,Ollie Watkins,eng ENG,1995.0,FW,FW,2,Aston Villa,eng Premier League
+39,Pau Torres,es ESP,1997.0,DF,DF,2,Aston Villa,eng Premier League
+40,Tyrone Mings,eng ENG,1993.0,DF,DF,2,Aston Villa,eng Premier League
+41,Victor Lindelöf,se SWE,1994.0,MF,MF,2,Aston Villa,eng Premier League
+42,Youri Tielemans,be BEL,1997.0,MF,MF,2,Aston Villa,eng Premier League
+43,Adam Smith,eng ENG,1991.0,DF,DF,3,Bournemouth,eng Premier League
+44,Adrien Truffert,fr FRA,2001.0,DF,DF,3,Bournemouth,eng Premier League
+45,Alex Scott,eng ENG,2003.0,MF,MF,3,Bournemouth,eng Premier League
+46,Amine Adli,ma MAR,2000.0,"MF,FW",MF,3,Bournemouth,eng Premier League
+47,Antoine Semenyo,gh GHA,2000.0,"FW,MF",FW,3,Bournemouth,eng Premier League
+48,Bafodé Diakité,fr FRA,2001.0,DF,DF,3,Bournemouth,eng Premier League
+49,Ben Winterburn,eng ENG,2004.0,MF,MF,3,Bournemouth,eng Premier League
+50,David Brooks,wls WAL,1997.0,"MF,FW",MF,3,Bournemouth,eng Premier League
+51,Eli Junior Kroupi,fr FRA,2006.0,"FW,MF",FW,3,Bournemouth,eng Premier League
+52,Evanilson,br BRA,1999.0,FW,FW,3,Bournemouth,eng Premier League
+53,Hamed Junior Traorè,ci CIV,2000.0,MF,MF,3,Bournemouth,eng Premier League
+54,James Hill,eng ENG,2002.0,DF,DF,3,Bournemouth,eng Premier League
+55,Julio Soler,ar ARG,2005.0,FW,FW,3,Bournemouth,eng Premier League
+56,Justin Kluivert,nl NED,1999.0,"MF,FW",MF,3,Bournemouth,eng Premier League
+57,Lewis Cook,eng ENG,1997.0,MF,MF,3,Bournemouth,eng Premier League
+58,Marcos Senesi,ar ARG,1997.0,DF,DF,3,Bournemouth,eng Premier League
+59,Marcus Tavernier,eng ENG,1999.0,MF,MF,3,Bournemouth,eng Premier League
+60,Ryan Christie,sct SCO,1995.0,MF,MF,3,Bournemouth,eng Premier League
+61,Tyler Adams,us USA,1999.0,MF,MF,3,Bournemouth,eng Premier League
+62,Veljko Milosavljević,rs SRB,2007.0,DF,DF,3,Bournemouth,eng Premier League
+63,Álex Jiménez,es ESP,2005.0,DF,DF,3,Bournemouth,eng Premier League
+64,Đorđe Petrović,rs SRB,1999.0,GK,GK,3,Bournemouth,eng Premier League
+65,Aaron Hickey,sct SCO,2002.0,"DF,FW",DF,4,Brentford,eng Premier League
+66,Antoni Milambo,nl NED,2005.0,MF,MF,4,Brentford,eng Premier League
+67,Caoimhín Kelleher,ie IRL,1998.0,GK,GK,4,Brentford,eng Premier League
+68,Dango Ouattara,bf BFA,2002.0,FW,FW,4,Brentford,eng Premier League
+69,Ethan Pinnock,jm JAM,1993.0,DF,DF,4,Brentford,eng Premier League
+70,Fabio Carvalho,pt POR,2002.0,"FW,MF",FW,4,Brentford,eng Premier League
+71,Frank Onyeka,ng NGA,1998.0,MF,MF,4,Brentford,eng Premier League
+72,Jordan Henderson,eng ENG,1990.0,MF,MF,4,Brentford,eng Premier League
+73,Keane Lewis-Potter,eng ENG,2001.0,"DF,FW",DF,4,Brentford,eng Premier League
+74,Kevin Schade,de GER,2001.0,FW,FW,4,Brentford,eng Premier League
+75,Kristoffer Ajer,no NOR,1998.0,DF,DF,4,Brentford,eng Premier League
+76,Mathias Jensen,dk DEN,1996.0,MF,MF,4,Brentford,eng Premier League
+77,Michael Kayode,it ITA,2004.0,DF,DF,4,Brentford,eng Premier League
+78,Mikkel Damsgaard,dk DEN,2000.0,MF,MF,4,Brentford,eng Premier League
+79,Nathan Collins,ie IRL,2001.0,DF,DF,4,Brentford,eng Premier League
+80,Rico Henry,eng ENG,1997.0,DF,DF,4,Brentford,eng Premier League
+81,Sepp van den Berg,nl NED,2001.0,DF,DF,4,Brentford,eng Premier League
+82,Thiago,br BRA,2001.0,FW,FW,4,Brentford,eng Premier League
+83,Yehor Yarmoliuk,ua UKR,2004.0,MF,MF,4,Brentford,eng Premier League
+84,Bart Verbruggen,nl NED,2002.0,GK,GK,5,Brighton,eng Premier League
+85,Brajan Gruda,de GER,2004.0,"MF,FW",MF,5,Brighton,eng Premier League
+86,Carlos Baleba,cm CMR,2004.0,MF,MF,5,Brighton,eng Premier League
+87,Danny Welbeck,eng ENG,1990.0,FW,FW,5,Brighton,eng Premier League
+88,Diego Coppola,it ITA,2003.0,DF,DF,5,Brighton,eng Premier League
+89,Diego Gómez,py PAR,2003.0,MF,MF,5,Brighton,eng Premier League
+90,Ferdi Kadioglu,tr TUR,1999.0,"DF,FW",DF,5,Brighton,eng Premier League
+91,Georginio Rutter,fr FRA,2002.0,"FW,MF",FW,5,Brighton,eng Premier League
+92,Jack Hinshelwood,eng ENG,2005.0,MF,MF,5,Brighton,eng Premier League
+93,James Milner,eng ENG,1986.0,MF,MF,5,Brighton,eng Premier League
+94,Jan Paul van Hecke,nl NED,2000.0,DF,DF,5,Brighton,eng Premier League
+95,Joël Veltman,nl NED,1992.0,DF,DF,5,Brighton,eng Premier League
+96,Kaoru Mitoma,jp JPN,1997.0,FW,FW,5,Brighton,eng Premier League
+97,Lewis Dunk,eng ENG,1991.0,DF,DF,5,Brighton,eng Premier League
+98,Mats Wieffer,nl NED,1999.0,DF,DF,5,Brighton,eng Premier League
+99,Matt O'Riley,dk DEN,2000.0,MF,MF,5,Brighton,eng Premier League
+100,Maxim De Cuyper,be BEL,2000.0,DF,DF,5,Brighton,eng Premier League
+101,Stefanos Tzimas,gr GRE,2006.0,FW,FW,5,Brighton,eng Premier League
+102,Yankuba Minteh,gm GAM,2004.0,FW,FW,5,Brighton,eng Premier League
+103,Yasin Ayari,se SWE,2003.0,MF,MF,5,Brighton,eng Premier League
+104,Armando Broja,al ALB,2001.0,FW,FW,6,Burnley,eng Premier League
+105,Florentino Luís,pt POR,1999.0,MF,MF,6,Burnley,eng Premier League
+106,Hannibal Mejbri,tn TUN,2003.0,MF,MF,6,Burnley,eng Premier League
+107,Hjalmar Ekdal,se SWE,1998.0,DF,DF,6,Burnley,eng Premier League
+108,Jacob Bruun Larsen,dk DEN,1998.0,"FW,MF",FW,6,Burnley,eng Premier League
+109,Jaidon Anthony,eng ENG,1999.0,"MF,FW",MF,6,Burnley,eng Premier League
+110,Joe Worrall,eng ENG,1997.0,DF,DF,6,Burnley,eng Premier League
+111,Josh Cullen,ie IRL,1996.0,MF,MF,6,Burnley,eng Premier League
+112,Josh Laurent,eng ENG,1995.0,"MF,DF",MF,6,Burnley,eng Premier League
+113,Kyle Walker,eng ENG,1990.0,DF,DF,6,Burnley,eng Premier League
+114,Lesley Ugochukwu,fr FRA,2004.0,MF,MF,6,Burnley,eng Premier League
+115,Loum Tchaouna,fr FRA,2003.0,MF,MF,6,Burnley,eng Premier League
+116,Lyle Foster,za RSA,2000.0,FW,FW,6,Burnley,eng Premier League
+117,Marcus Edwards,eng ENG,1998.0,FW,FW,6,Burnley,eng Premier League
+118,Martin Dúbravka,sk SVK,1989.0,GK,GK,6,Burnley,eng Premier League
+119,Maxime Estève,fr FRA,2002.0,DF,DF,6,Burnley,eng Premier League
+120,Oliver Sonne,pe PER,2000.0,"DF,FW",DF,6,Burnley,eng Premier League
+121,Quilindschy Hartman,nl NED,2001.0,DF,DF,6,Burnley,eng Premier League
+122,Zian Flemming,nl NED,1998.0,FW,FW,6,Burnley,eng Premier League
+123,Alejandro Garnacho,ar ARG,2004.0,FW,FW,8,Chelsea,eng Premier League
+124,Andrey Santos,br BRA,2004.0,MF,MF,8,Chelsea,eng Premier League
+125,Cole Palmer,eng ENG,2002.0,MF,MF,8,Chelsea,eng Premier League
+126,Enzo Fernández,ar ARG,2001.0,MF,MF,8,Chelsea,eng Premier League
+127,Estêvão Willian,br BRA,2007.0,FW,FW,8,Chelsea,eng Premier League
+128,Facundo Buonanotte,ar ARG,2004.0,MF,MF,8,Chelsea,eng Premier League
+129,Jamie Gittens,eng ENG,2004.0,FW,FW,8,Chelsea,eng Premier League
+130,Jorrel Hato,nl NED,2006.0,DF,DF,8,Chelsea,eng Premier League
+131,Joshua Acheampong,eng ENG,2006.0,DF,DF,8,Chelsea,eng Premier League
+132,João Pedro,br BRA,2001.0,"FW,MF",FW,8,Chelsea,eng Premier League
+133,Liam Delap,eng ENG,2003.0,FW,FW,8,Chelsea,eng Premier League
+134,Malo Gusto,fr FRA,2003.0,DF,DF,8,Chelsea,eng Premier League
+135,Marc Cucurella,es ESP,1998.0,DF,DF,8,Chelsea,eng Premier League
+136,Moisés Caicedo,ec ECU,2001.0,MF,MF,8,Chelsea,eng Premier League
+137,Pedro Neto,pt POR,2000.0,FW,FW,8,Chelsea,eng Premier League
+138,Reece James,eng ENG,1999.0,DF,DF,8,Chelsea,eng Premier League
+139,Robert Sánchez,es ESP,1997.0,GK,GK,8,Chelsea,eng Premier League
+140,Tosin Adarabioyo,eng ENG,1997.0,DF,DF,8,Chelsea,eng Premier League
+141,Trevoh Chalobah,eng ENG,1999.0,DF,DF,8,Chelsea,eng Premier League
+142,Tyrique George,eng ENG,2006.0,FW,FW,8,Chelsea,eng Premier League
+143,Wesley Fofana,fr FRA,2000.0,DF,DF,8,Chelsea,eng Premier League
+144,Adam Wharton,eng ENG,2004.0,MF,MF,10,Crystal Palace,eng Premier League
+145,Chris Richards,us USA,2000.0,DF,DF,10,Crystal Palace,eng Premier League
+146,Christantus Uche,ng NGA,2003.0,MF,MF,10,Crystal Palace,eng Premier League
+147,Daichi Kamada,jp JPN,1996.0,MF,MF,10,Crystal Palace,eng Premier League
+148,Daniel Muñoz,co COL,1996.0,"DF,MF",DF,10,Crystal Palace,eng Premier League
+149,Dean Henderson,eng ENG,1997.0,GK,GK,10,Crystal Palace,eng Premier League
+150,Eberechi Eze,eng ENG,1998.0,MF,MF,10,Crystal Palace,eng Premier League
+151,Ismaila Sarr,sn SEN,1998.0,"MF,FW",MF,10,Crystal Palace,eng Premier League
+152,Jean-Philippe Mateta,fr FRA,1997.0,FW,FW,10,Crystal Palace,eng Premier League
+153,Jefferson Lerma,co COL,1994.0,MF,MF,10,Crystal Palace,eng Premier League
+154,Justin Devenny,nir NIR,2003.0,"FW,MF",FW,10,Crystal Palace,eng Premier League
+155,Marc Guéhi,eng ENG,2000.0,DF,DF,10,Crystal Palace,eng Premier League
+156,Maxence Lacroix,fr FRA,2000.0,DF,DF,10,Crystal Palace,eng Premier League
+157,Nathaniel Clyne,eng ENG,1991.0,DF,DF,10,Crystal Palace,eng Premier League
+158,Odsonne Édouard,fr FRA,1998.0,FW,FW,10,Crystal Palace,eng Premier League
+159,Romain Esse,eng ENG,2005.0,FW,FW,10,Crystal Palace,eng Premier League
+160,Tyrick Mitchell,eng ENG,1999.0,"DF,MF",DF,10,Crystal Palace,eng Premier League
+161,Will Hughes,eng ENG,1995.0,MF,MF,10,Crystal Palace,eng Premier League
+162,Yeremi Pino,es ESP,2002.0,MF,MF,10,Crystal Palace,eng Premier League
+163,Beto,gw GNB,1998.0,FW,FW,11,Everton,eng Premier League
+164,Carlos Alcaraz,ar ARG,2002.0,"FW,MF",FW,11,Everton,eng Premier League
+165,Dwight McNeil,eng ENG,1999.0,FW,FW,11,Everton,eng Premier League
+166,Harrison Armstrong,eng ENG,2007.0,FW,FW,11,Everton,eng Premier League
+167,Idrissa Gana Gueye,sn SEN,1989.0,MF,MF,11,Everton,eng Premier League
+168,Iliman Ndiaye,sn SEN,2000.0,FW,FW,11,Everton,eng Premier League
+169,Jack Grealish,eng ENG,1995.0,FW,FW,11,Everton,eng Premier League
+170,Jake O'Brien,ie IRL,2001.0,DF,DF,11,Everton,eng Premier League
+171,James Garner,eng ENG,2001.0,"DF,MF",DF,11,Everton,eng Premier League
+172,James Tarkowski,eng ENG,1992.0,DF,DF,11,Everton,eng Premier League
+173,Jordan Pickford,eng ENG,1994.0,GK,GK,11,Everton,eng Premier League
+174,Kiernan Dewsbury-Hall,eng ENG,1998.0,MF,MF,11,Everton,eng Premier League
+175,Merlin Röhl,de GER,2002.0,MF,MF,11,Everton,eng Premier League
+176,Michael Keane,eng ENG,1993.0,DF,DF,11,Everton,eng Premier League
+177,Séamus Coleman,ie IRL,1988.0,FW,FW,11,Everton,eng Premier League
+178,Thierno Barry,fr FRA,2002.0,"FW,MF",FW,11,Everton,eng Premier League
+179,Tim Iroegbunam,eng ENG,2003.0,MF,MF,11,Everton,eng Premier League
+180,Vitaliy Mykolenko,ua UKR,1999.0,DF,DF,11,Everton,eng Premier League
+181,Adama Traoré,es ESP,1996.0,FW,FW,12,Fulham,eng Premier League
+182,Alex Iwobi,ng NGA,1996.0,FW,FW,12,Fulham,eng Premier League
+183,Antonee Robinson,us USA,1997.0,DF,DF,12,Fulham,eng Premier League
+184,Bernd Leno,de GER,1992.0,GK,GK,12,Fulham,eng Premier League
+185,Calvin Bassey,ng NGA,1999.0,DF,DF,12,Fulham,eng Premier League
+186,Emile Smith Rowe,eng ENG,2000.0,"MF,FW",MF,12,Fulham,eng Premier League
+187,Harry Wilson,wls WAL,1997.0,FW,FW,12,Fulham,eng Premier League
+188,Joachim Andersen,dk DEN,1996.0,DF,DF,12,Fulham,eng Premier League
+189,Jorge Cuenca,es ESP,1999.0,DF,DF,12,Fulham,eng Premier League
+190,Joshua King,eng ENG,2007.0,MF,MF,12,Fulham,eng Premier League
+191,Kenny Tete,nl NED,1995.0,DF,DF,12,Fulham,eng Premier League
+192,Kevin,br BRA,2003.0,FW,FW,12,Fulham,eng Premier League
+193,Raúl Jiménez,mx MEX,1991.0,FW,FW,12,Fulham,eng Premier League
+194,Rodrigo Muniz,br BRA,2001.0,FW,FW,12,Fulham,eng Premier League
+195,Ryan Sessegnon,eng ENG,2000.0,DF,DF,12,Fulham,eng Premier League
+196,Sander Berge,no NOR,1998.0,MF,MF,12,Fulham,eng Premier League
+197,Saša Lukić,rs SRB,1996.0,MF,MF,12,Fulham,eng Premier League
+198,Timothy Castagne,be BEL,1995.0,"FW,DF",FW,12,Fulham,eng Premier League
+199,Tom Cairney,sct SCO,1991.0,MF,MF,12,Fulham,eng Premier League
+200,Anton Stach,de GER,1998.0,MF,MF,16,Leeds,eng Premier League
+201,Ao Tanaka,jp JPN,1998.0,MF,MF,16,Leeds,eng Premier League
+202,Brenden Aaronson,us USA,2000.0,FW,FW,16,Leeds,eng Premier League
+203,Daniel James,wls WAL,1997.0,FW,FW,16,Leeds,eng Premier League
+204,Dominic Calvert-Lewin,eng ENG,1997.0,FW,FW,16,Leeds,eng Premier League
+205,Ethan Ampadu,wls WAL,2000.0,MF,MF,16,Leeds,eng Premier League
+206,Gabriel Gudmundsson,se SWE,1999.0,DF,DF,16,Leeds,eng Premier League
+207,Ilia Gruev,bg BUL,2000.0,MF,MF,16,Leeds,eng Premier League
+208,Jack Harrison,eng ENG,1996.0,FW,FW,16,Leeds,eng Premier League
+209,James Justin,eng ENG,1998.0,DF,DF,16,Leeds,eng Premier League
+210,Jayden Bogle,eng ENG,2000.0,DF,DF,16,Leeds,eng Premier League
+211,Joe Rodon,wls WAL,1997.0,DF,DF,16,Leeds,eng Premier League
+212,Joël Piroe,nl NED,1999.0,FW,FW,16,Leeds,eng Premier League
+213,Karl Darlow,wls WAL,1990.0,GK,GK,16,Leeds,eng Premier League
+214,Lucas Perri,br BRA,1997.0,GK,GK,16,Leeds,eng Premier League
+215,Lukas Nmecha,de GER,1998.0,FW,FW,16,Leeds,eng Premier League
+216,Noah Okafor,ch SUI,2000.0,FW,FW,16,Leeds,eng Premier League
+217,Pascal Struijk,nl NED,1999.0,DF,DF,16,Leeds,eng Premier League
+218,Sam Byram,eng ENG,1993.0,DF,DF,16,Leeds,eng Premier League
+219,Sean Longstaff,eng ENG,1997.0,MF,MF,16,Leeds,eng Premier League
+220,Wilfried Gnonto,it ITA,2003.0,FW,FW,16,Leeds,eng Premier League
+221,Alexis Mac Allister,ar ARG,1998.0,MF,MF,18,Liverpool,eng Premier League
+222,Alisson,br BRA,1992.0,GK,GK,18,Liverpool,eng Premier League
+223,Andrew Robertson,sct SCO,1994.0,DF,DF,18,Liverpool,eng Premier League
+224,Cody Gakpo,nl NED,1999.0,FW,FW,18,Liverpool,eng Premier League
+225,Conor Bradley,nir NIR,2003.0,DF,DF,18,Liverpool,eng Premier League
+226,Curtis Jones,eng ENG,2001.0,MF,MF,18,Liverpool,eng Premier League
+227,Dominik Szoboszlai,hu HUN,2000.0,"DF,MF",DF,18,Liverpool,eng Premier League
+228,Federico Chiesa,it ITA,1997.0,FW,FW,18,Liverpool,eng Premier League
+229,Florian Wirtz,de GER,2003.0,MF,MF,18,Liverpool,eng Premier League
+230,Harvey Elliott,eng ENG,2003.0,"MF,FW",MF,18,Liverpool,eng Premier League
+231,Hugo Ekitike,fr FRA,2002.0,FW,FW,18,Liverpool,eng Premier League
+232,Ibrahima Konaté,fr FRA,1999.0,DF,DF,18,Liverpool,eng Premier League
+233,Jeremie Frimpong,nl NED,2000.0,DF,DF,18,Liverpool,eng Premier League
+234,Joe Gomez,eng ENG,1997.0,DF,DF,18,Liverpool,eng Premier League
+235,Milos Kerkez,hu HUN,2003.0,DF,DF,18,Liverpool,eng Premier League
+236,Mohamed Salah,eg EGY,1992.0,FW,FW,18,Liverpool,eng Premier League
+237,Rio Ngumoha,eng ENG,2008.0,"MF,FW",MF,18,Liverpool,eng Premier League
+238,Ryan Gravenberch,nl NED,2002.0,MF,MF,18,Liverpool,eng Premier League
+239,Virgil van Dijk,nl NED,1991.0,DF,DF,18,Liverpool,eng Premier League
+240,Wataru Endo,jp JPN,1993.0,"MF,DF",MF,18,Liverpool,eng Premier League
+241,Abdukodir Khusanov,uz UZB,2004.0,DF,DF,20,Man City,eng Premier League
+242,Bernardo Silva,pt POR,1994.0,MF,MF,20,Man City,eng Premier League
+243,Erling Haaland,no NOR,2000.0,FW,FW,20,Man City,eng Premier League
+244,Gianluigi Donnarumma,it ITA,1999.0,GK,GK,20,Man City,eng Premier League
+245,James Trafford,eng ENG,2002.0,GK,GK,20,Man City,eng Premier League
+246,Jeremy Doku,be BEL,2002.0,"MF,FW",MF,20,Man City,eng Premier League
+247,John Stones,eng ENG,1994.0,DF,DF,20,Man City,eng Premier League
+248,Joško Gvardiol,hr CRO,2002.0,DF,DF,20,Man City,eng Premier League
+249,Matheus Nunes,pt POR,1998.0,DF,DF,20,Man City,eng Premier League
+250,Nathan Aké,nl NED,1995.0,DF,DF,20,Man City,eng Premier League
+251,Nico O’Reilly,eng ENG,2005.0,"DF,MF",DF,20,Man City,eng Premier League
+252,Nicolás González,es ESP,2002.0,MF,MF,20,Man City,eng Premier League
+253,Omar Marmoush,eg EGY,1999.0,"FW,MF",FW,20,Man City,eng Premier League
+254,Oscar Bobb,no NOR,2003.0,"FW,MF",FW,20,Man City,eng Premier League
+255,Phil Foden,eng ENG,2000.0,MF,MF,20,Man City,eng Premier League
+256,Rayan Aït-Nouri,dz ALG,2001.0,DF,DF,20,Man City,eng Premier League
+257,Rayan Cherki,fr FRA,2003.0,"MF,FW",MF,20,Man City,eng Premier League
+258,Rico Lewis,eng ENG,2004.0,DF,DF,20,Man City,eng Premier League
+259,Rodri,es ESP,1996.0,MF,MF,20,Man City,eng Premier League
+260,Rúben Dias,pt POR,1997.0,DF,DF,20,Man City,eng Premier League
+261,Sávio,br BRA,2004.0,MF,MF,20,Man City,eng Premier League
+262,Tijjani Reijnders,nl NED,1998.0,MF,MF,20,Man City,eng Premier League
+263,Altay Bayındır,tr TUR,1998.0,GK,GK,21,Man United,eng Premier League
+264,Amad Diallo,ci CIV,2002.0,"DF,MF",DF,21,Man United,eng Premier League
+265,Ayden Heaven,eng ENG,2006.0,DF,DF,21,Man United,eng Premier League
+266,Benjamin Šeško,si SVN,2003.0,FW,FW,21,Man United,eng Premier League
+267,Bruno Fernandes,pt POR,1994.0,MF,MF,21,Man United,eng Premier League
+268,Bryan Mbeumo,cm CMR,1999.0,MF,MF,21,Man United,eng Premier League
+269,Casemiro,br BRA,1992.0,MF,MF,21,Man United,eng Premier League
+270,Diogo Dalot,pt POR,1999.0,DF,DF,21,Man United,eng Premier League
+271,Harry Maguire,eng ENG,1993.0,DF,DF,21,Man United,eng Premier League
+272,Joshua Zirkzee,nl NED,2001.0,"FW,MF",FW,21,Man United,eng Premier League
+273,Kobbie Mainoo,eng ENG,2005.0,MF,MF,21,Man United,eng Premier League
+274,Leny Yoro,fr FRA,2005.0,DF,DF,21,Man United,eng Premier League
+275,Luke Shaw,eng ENG,1995.0,DF,DF,21,Man United,eng Premier League
+276,Manuel Ugarte,uy URU,2001.0,MF,MF,21,Man United,eng Premier League
+277,Mason Mount,eng ENG,1999.0,MF,MF,21,Man United,eng Premier League
+278,Matheus Cunha,br BRA,1999.0,"FW,MF",FW,21,Man United,eng Premier League
+279,Matthijs de Ligt,nl NED,1999.0,DF,DF,21,Man United,eng Premier League
+280,Noussair Mazraoui,ma MAR,1997.0,DF,DF,21,Man United,eng Premier League
+281,Patrick Dorgu,dk DEN,2004.0,DF,DF,21,Man United,eng Premier League
+282,Anthony Elanga,se SWE,2002.0,FW,FW,22,Newcastle,eng Premier League
+283,Anthony Gordon,eng ENG,2001.0,FW,FW,22,Newcastle,eng Premier League
+284,Bruno Guimarães,br BRA,1997.0,MF,MF,22,Newcastle,eng Premier League
+285,Dan Burn,eng ENG,1992.0,DF,DF,22,Newcastle,eng Premier League
+286,Fabian Schär,ch SUI,1991.0,DF,DF,22,Newcastle,eng Premier League
+287,Harvey Barnes,eng ENG,1997.0,FW,FW,22,Newcastle,eng Premier League
+288,Jacob Murphy,eng ENG,1995.0,FW,FW,22,Newcastle,eng Premier League
+289,Jacob Ramsey,eng ENG,2001.0,MF,MF,22,Newcastle,eng Premier League
+290,Joe Willock,eng ENG,1999.0,MF,MF,22,Newcastle,eng Premier League
+291,Joelinton,br BRA,1996.0,MF,MF,22,Newcastle,eng Premier League
+292,Kieran Trippier,eng ENG,1990.0,DF,DF,22,Newcastle,eng Premier League
+293,Lewis Hall,eng ENG,2004.0,DF,DF,22,Newcastle,eng Premier League
+294,Lewis Miley,eng ENG,2006.0,MF,MF,22,Newcastle,eng Premier League
+295,Malick Thiaw,de GER,2001.0,DF,DF,22,Newcastle,eng Premier League
+296,Nick Pope,eng ENG,1992.0,GK,GK,22,Newcastle,eng Premier League
+297,Nick Woltemade,de GER,2002.0,FW,FW,22,Newcastle,eng Premier League
+298,Sandro Tonali,it ITA,2000.0,MF,MF,22,Newcastle,eng Premier League
+299,Sven Botman,nl NED,2000.0,DF,DF,22,Newcastle,eng Premier League
+300,Valentino Livramento,eng ENG,2002.0,DF,DF,22,Newcastle,eng Premier League
+301,William Osula,dk DEN,2003.0,FW,FW,22,Newcastle,eng Premier League
+302,Arnaud Kalimuendo,fr FRA,2002.0,FW,FW,24,Nott'm Forest,eng Premier League
+303,Callum Hudson-Odoi,eng ENG,2000.0,FW,FW,24,Nott'm Forest,eng Premier League
+304,Chris Wood,nz NZL,1991.0,FW,FW,24,Nott'm Forest,eng Premier League
+305,Dan Ndoye,ch SUI,2000.0,FW,FW,24,Nott'm Forest,eng Premier League
+306,Dilane Bakwa,fr FRA,2002.0,FW,FW,24,Nott'm Forest,eng Premier League
+307,Elliot Anderson,eng ENG,2002.0,MF,MF,24,Nott'm Forest,eng Premier League
+308,Ibrahim Sangaré,ci CIV,1997.0,MF,MF,24,Nott'm Forest,eng Premier League
+309,Igor Jesus,br BRA,2001.0,FW,FW,24,Nott'm Forest,eng Premier League
+310,James Mcatee,eng ENG,2002.0,"MF,FW",MF,24,Nott'm Forest,eng Premier League
+311,Jota Silva,pt POR,1999.0,FW,FW,24,Nott'm Forest,eng Premier League
+312,Matz Sels,be BEL,1992.0,GK,GK,24,Nott'm Forest,eng Premier League
+313,Morato,br BRA,2001.0,DF,DF,24,Nott'm Forest,eng Premier League
+314,Morgan Gibbs-White,eng ENG,2000.0,MF,MF,24,Nott'm Forest,eng Premier League
+315,Murillo,br BRA,2002.0,DF,DF,24,Nott'm Forest,eng Premier League
+316,Neco Williams,wls WAL,2001.0,DF,DF,24,Nott'm Forest,eng Premier League
+317,Nicolò Savona,it ITA,2003.0,DF,DF,24,Nott'm Forest,eng Premier League
+318,Nikola Milenković,rs SRB,1997.0,DF,DF,24,Nott'm Forest,eng Premier League
+319,Ola Aina,ng NGA,1996.0,DF,DF,24,Nott'm Forest,eng Premier League
+320,Omari Hutchinson,eng ENG,2003.0,"FW,MF",FW,24,Nott'm Forest,eng Premier League
+321,Ryan Yates,eng ENG,1997.0,MF,MF,24,Nott'm Forest,eng Premier League
+322,Brian Brobbey,nl NED,2002.0,FW,FW,28,Sunderland,eng Premier League
+323,Chemsdine Talbi,ma MAR,2005.0,FW,FW,28,Sunderland,eng Premier League
+324,Chris Rigg,eng ENG,2007.0,FW,FW,28,Sunderland,eng Premier League
+325,Daniel Ballard,nir NIR,1999.0,DF,DF,28,Sunderland,eng Premier League
+326,Eliezer Mayenda,es ESP,2005.0,FW,FW,28,Sunderland,eng Premier League
+327,Enzo Le Fée,fr FRA,2000.0,"FW,MF",FW,28,Sunderland,eng Premier League
+328,Granit Xhaka,ch SUI,1992.0,MF,MF,28,Sunderland,eng Premier League
+329,Habib Diarra,sn SEN,2004.0,MF,MF,28,Sunderland,eng Premier League
+330,Jenson Seelt,nl NED,2003.0,DF,DF,28,Sunderland,eng Premier League
+331,Lutsharel Geertruida,nl NED,2000.0,MF,MF,28,Sunderland,eng Premier League
+332,Marc Guiu,es ESP,2006.0,FW,FW,28,Sunderland,eng Premier League
+333,Noah Sadiki,cd COD,2004.0,MF,MF,28,Sunderland,eng Premier League
+334,Nordi Mukiele,fr FRA,1997.0,DF,DF,28,Sunderland,eng Premier League
+335,Omar Alderete,py PAR,1996.0,DF,DF,28,Sunderland,eng Premier League
+336,Patrick Roberts,eng ENG,1997.0,"MF,FW",MF,28,Sunderland,eng Premier League
+337,Reinildo Mandava,mz MOZ,1994.0,DF,DF,28,Sunderland,eng Premier League
+338,Robin Roefs,nl NED,2003.0,GK,GK,28,Sunderland,eng Premier League
+339,Simon Adingra,ci CIV,2002.0,FW,FW,28,Sunderland,eng Premier League
+340,Trai Hume,nir NIR,2002.0,DF,DF,28,Sunderland,eng Premier League
+341,Wilson Isidor,fr FRA,2000.0,FW,FW,28,Sunderland,eng Premier League
+342,Archie Gray,eng ENG,2006.0,MF,MF,27,Tottenham,eng Premier League
+343,Brennan Johnson,wls WAL,2001.0,FW,FW,27,Tottenham,eng Premier League
+344,Cristian Romero,ar ARG,1998.0,DF,DF,27,Tottenham,eng Premier League
+345,Destiny Udogie,it ITA,2002.0,DF,DF,27,Tottenham,eng Premier League
+346,Djed Spence,eng ENG,2000.0,DF,DF,27,Tottenham,eng Premier League
+347,Dominic Solanke,eng ENG,1997.0,FW,FW,27,Tottenham,eng Premier League
+348,Guglielmo Vicario,it ITA,1996.0,GK,GK,27,Tottenham,eng Premier League
+349,João Palhinha,pt POR,1995.0,MF,MF,27,Tottenham,eng Premier League
+350,Kevin Danso,at AUT,1998.0,DF,DF,27,Tottenham,eng Premier League
+351,Lucas Bergvall,se SWE,2006.0,MF,MF,27,Tottenham,eng Premier League
+352,Mathys Tel,fr FRA,2005.0,FW,FW,27,Tottenham,eng Premier League
+353,Micky van de Ven,nl NED,2001.0,DF,DF,27,Tottenham,eng Premier League
+354,Mohammed Kudus,gh GHA,2000.0,"FW,MF",FW,27,Tottenham,eng Premier League
+355,Pape Matar Sarr,sn SEN,2002.0,MF,MF,27,Tottenham,eng Premier League
+356,Pedro Porro,es ESP,1999.0,DF,DF,27,Tottenham,eng Premier League
+357,Richarlison,br BRA,1997.0,FW,FW,27,Tottenham,eng Premier League
+358,Rodrigo Bentancur,uy URU,1997.0,MF,MF,27,Tottenham,eng Premier League
+359,Wilson Odobert,fr FRA,2004.0,"FW,MF",FW,27,Tottenham,eng Premier League
+360,Xavi Simons,nl NED,2003.0,FW,FW,27,Tottenham,eng Premier League
+361,Aaron Wan-Bissaka,cd COD,1997.0,DF,DF,31,West Ham,eng Premier League
+362,Andy Irving,sct SCO,2000.0,MF,MF,31,West Ham,eng Premier League
+363,Callum Wilson,eng ENG,1992.0,FW,FW,31,West Ham,eng Premier League
+364,Crysencio Summerville,nl NED,2001.0,FW,FW,31,West Ham,eng Premier League
+365,El Hadji Malick Diouf,sn SEN,2004.0,DF,DF,31,West Ham,eng Premier League
+366,Freddie Potts,eng ENG,2003.0,MF,MF,31,West Ham,eng Premier League
+367,Guido Rodríguez,ar ARG,1994.0,MF,MF,31,West Ham,eng Premier League
+368,James Ward-Prowse,eng ENG,1994.0,MF,MF,31,West Ham,eng Premier League
+369,Jarrod Bowen,eng ENG,1996.0,FW,FW,31,West Ham,eng Premier League
+370,Jean-Clair Todibo,fr FRA,1999.0,DF,DF,31,West Ham,eng Premier League
+371,Konstantinos Mavropanos,gr GRE,1997.0,DF,DF,31,West Ham,eng Premier League
+372,Kyle Walker-Peters,eng ENG,1997.0,DF,DF,31,West Ham,eng Premier League
+373,Lucas Paquetá,br BRA,1997.0,"MF,FW",MF,31,West Ham,eng Premier League
+374,Luis Guilherme,br BRA,2006.0,FW,FW,31,West Ham,eng Premier League
+375,Mads Hermansen,dk DEN,2000.0,GK,GK,31,West Ham,eng Premier League
+376,Mateus Fernandes,pt POR,2004.0,"FW,MF",FW,31,West Ham,eng Premier League
+377,Max Kilman,eng ENG,1997.0,DF,DF,31,West Ham,eng Premier League
+378,Nayef Aguerd,ma MAR,1996.0,DF,DF,31,West Ham,eng Premier League
+379,Niclas Füllkrug,de GER,1993.0,FW,FW,31,West Ham,eng Premier League
+380,Soungoutou Magassa,fr FRA,2003.0,MF,MF,31,West Ham,eng Premier League
+381,Tomáš Souček,cz CZE,1995.0,MF,MF,31,West Ham,eng Premier League
+382,André,br BRA,2001.0,MF,MF,32,Wolves,eng Premier League
+383,David Møller Wolfe,no NOR,2002.0,MF,MF,32,Wolves,eng Premier League
+384,Emmanuel Agbadou,ci CIV,1997.0,DF,DF,32,Wolves,eng Premier League
+385,Fer López,es ESP,2004.0,"MF,FW",MF,32,Wolves,eng Premier League
+386,Hugo Bueno,es ESP,2002.0,"MF,DF",MF,32,Wolves,eng Premier League
+387,Hwang Hee-chan,kr KOR,1996.0,FW,FW,32,Wolves,eng Premier League
+388,Jackson Tchatchoua,cm CMR,2001.0,"MF,DF",MF,32,Wolves,eng Premier League
+389,Jean-Ricner Bellegarde,ht HAI,1998.0,"FW,MF",FW,32,Wolves,eng Premier League
+390,Jhon Arias,co COL,1997.0,FW,FW,32,Wolves,eng Premier League
+391,José Sá,pt POR,1993.0,GK,GK,32,Wolves,eng Premier League
+392,João Gomes,br BRA,2001.0,MF,MF,32,Wolves,eng Premier League
+393,Jørgen Strand Larsen,no NOR,2000.0,FW,FW,32,Wolves,eng Premier League
+394,Ki-Jana Hoever,nl NED,2002.0,MF,MF,32,Wolves,eng Premier League
+395,Ladislav Krejčí,cz CZE,1999.0,"MF,DF",MF,32,Wolves,eng Premier League
+396,Marshall Munetsi,zw ZIM,1996.0,FW,FW,32,Wolves,eng Premier League
+397,Matt Doherty,ie IRL,1992.0,DF,DF,32,Wolves,eng Premier League
+398,Rodrigo Gomes,pt POR,2003.0,"DF,MF",DF,32,Wolves,eng Premier League
+399,Sam Johnstone,eng ENG,1993.0,GK,GK,32,Wolves,eng Premier League
+400,Santiago Bueno,uy URU,1998.0,DF,DF,32,Wolves,eng Premier League
+401,Sasa Kalajdzic,at AUT,1997.0,FW,FW,32,Wolves,eng Premier League
+402,Tolu Arokodare,ng NGA,2000.0,FW,FW,32,Wolves,eng Premier League
+403,Toti Gomes,pt POR,1999.0,DF,DF,32,Wolves,eng Premier League
+404,Yerson Mosquera,co COL,2001.0,DF,DF,32,Wolves,eng Premier League
