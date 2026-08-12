@@ -36,3 +36,42 @@ BUILDING TEAM FEATURES
   Feature columns : 60 (excl. keys + valid_from)
 
 ============================================================
+Building match features...
+============================================================
+C:\Users\Administrator\Desktop\FIFA2026\src\features\match_features.py:358: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["h2h_avg_away_goals"] = h2h_avg_ag_list
+C:\Users\Administrator\Desktop\FIFA2026\src\features\match_features.py:359: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["h2h_last3_home_wins"]= h2h_l3_hw_list
+C:\Users\Administrator\Desktop\FIFA2026\src\features\match_features.py:360: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["h2h_last3_draws"]    = h2h_l3_d_list
+C:\Users\Administrator\Desktop\FIFA2026\src\features\match_features.py:361: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["h2h_last3_away_wins"]= h2h_l3_aw_list
+=================================================================
+BUILDING MATCH FEATURES
+=================================================================
+
+[1] Building base table...
+  Total rows (hist + fixtures): 3420
+
+[2] Attaching team rolling features...
+  Historical rows: 3040  |  Fixture rows: 380
+
+[3] Computing relative (home - away) features...
+  Relative features added: 87
+
+[4] Computing head-to-head features...
+  H2H columns: 9
+
+[5] Attaching prior-season team features...
+  Prior-season features per team: 60
+  Saved C:\Users\Administrator\Desktop\FIFA2026\data\features\match_features.csv  (3420 rows x 402 cols)
+
+  Historical match rows : 3040
+  Fixture rows          : 380
+  Total feature columns : 390
+  Leakage check — first 2018/19 match, home_points_last3: nan  (expected NaN)
+  Target null for all fixtures: True
+
+============================================================
+ALL FEATURES BUILT SUCCESSFULLY
+============================================================
