@@ -66,7 +66,7 @@ match_df = pd.read_csv(
     encoding="utf-8-sig",
     low_memory=False
 )
-match_df["match_date"] = pd.to_datetime(match_df["match_date"])
+match_df["match_date"] = pd.to_datetime(match_df["match_date"].astype(str).str.strip(), format="mixed")
 print(f"  Total rows: {len(match_df)}")
 print()
 

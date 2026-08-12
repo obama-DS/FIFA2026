@@ -15,8 +15,10 @@ pickle-mixin>=1.0.2
 shap>=0.42.0
 matplotlib>=3.7.0
 
-# Optional: Advanced Models
+# Advanced Models
 xgboost>=2.0.0
+
+# Optional: Additional Models (for future phases)
 # lightgbm>=4.0.0
 
 # Installation:
