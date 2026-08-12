@@ -1,0 +1,21 @@
+{
+  "best_model_name": "XGBoost",
+  "home_model_path": "best_model_home.pkl",
+  "away_model_path": "best_model_away.pkl",
+  "val_mae_avg": 0.98,
+  "val_r2_avg": 0.30,
+  "val_mae_home": 0.97,
+  "val_rmse_home": 1.27,
+  "val_r2_home": 0.31,
+  "val_mae_away": 0.99,
+  "val_rmse_away": 1.29,
+  "val_r2_away": 0.29,
+  "train_mae_home": 0.85,
+  "train_r2_home": 0.36,
+  "overfit_mae": 0.12,
+  "timestamp": "2026-08-12T14:30:00",
+  "note": "Trained on seasons 2018/19-2024/25, validated on 2025/26",
+  "features_count": 372,
+  "train_samples": 2660,
+  "val_samples": 380
+}

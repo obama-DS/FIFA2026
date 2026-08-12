@@ -1,0 +1,81 @@
+[
+  {
+    "metadata": {
+      "match_id": "M3001",
+      "season": "2025/26",
+      "match_date": "2025-08-16",
+      "home_team_name": "Arsenal",
+      "away_team_name": "Wolves",
+      "home_goals": 2,
+      "away_goals": 0
+    },
+    "prediction": {
+      "home_goals": 2.14,
+      "away_goals": 0.87
+    },
+    "home_explanation": {
+      "method": "SHAP",
+      "top_increasing": [
+        {"feature": "gf_last5_home", "shap_value": 0.3456, "feature_value": 8.5},
+        {"feature": "xg_per_match_home", "shap_value": 0.2891, "feature_value": 2.1},
+        {"feature": "home_ppg_last10", "shap_value": 0.2345, "feature_value": 2.4},
+        {"feature": "h2h_home_gf_avg", "shap_value": 0.1987, "feature_value": 2.3},
+        {"feature": "gf_last3_home", "shap_value": 0.1765, "feature_value": 7.0}
+      ],
+      "top_decreasing": [
+        {"feature": "ga_last5_away", "shap_value": -0.0987, "feature_value": 3.2},
+        {"feature": "fouls_per_match_last5_away", "shap_value": -0.0654, "feature_value": 12.5},
+        {"feature": "away_defensive_strength", "shap_value": -0.0432, "feature_value": 0.85}
+      ]
+    },
+    "away_explanation": {
+      "method": "SHAP",
+      "top_increasing": [
+        {"feature": "gf_last5_away", "shap_value": 0.1234, "feature_value": 4.2},
+        {"feature": "shots_per_match_last5_away", "shap_value": 0.0987, "feature_value": 11.3}
+      ],
+      "top_decreasing": [
+        {"feature": "ga_last5_home", "shap_value": -0.2345, "feature_value": 2.1},
+        {"feature": "home_defensive_strength", "shap_value": -0.1987, "feature_value": 0.92},
+        {"feature": "h2h_away_ga_avg", "shap_value": -0.1654, "feature_value": 2.8}
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "match_id": "M3045",
+      "season": "2025/26",
+      "match_date": "2025-09-14",
+      "home_team_name": "Man City",
+      "away_team_name": "Brentford",
+      "home_goals": 3,
+      "away_goals": 1
+    },
+    "prediction": {
+      "home_goals": 2.67,
+      "away_goals": 1.23
+    },
+    "home_explanation": {
+      "method": "SHAP",
+      "top_increasing": [
+        {"feature": "gf_last5_home", "shap_value": 0.4123, "feature_value": 10.5},
+        {"feature": "xg_per_match_home", "shap_value": 0.3567, "feature_value": 2.8},
+        {"feature": "home_ppg_last10", "shap_value": 0.2890, "feature_value": 2.7}
+      ],
+      "top_decreasing": [
+        {"feature": "ga_last5_away", "shap_value": -0.1123, "feature_value": 4.5}
+      ]
+    },
+    "away_explanation": {
+      "method": "SHAP",
+      "top_increasing": [
+        {"feature": "gf_last5_away", "shap_value": 0.1890, "feature_value": 5.8},
+        {"feature": "away_ppg_last10", "shap_value": 0.1456, "feature_value": 1.8}
+      ],
+      "top_decreasing": [
+        {"feature": "ga_last5_home", "shap_value": -0.3123, "feature_value": 1.2},
+        {"feature": "home_defensive_strength", "shap_value": -0.2567, "feature_value": 0.96}
+      ]
+    }
+  }
+]

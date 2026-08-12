@@ -392,7 +392,7 @@ report_md += f"""
 
 **Performance**:
 - Validation MAE (average): {best_mae:.4f}
-- Validation RMSE (average): {best_rmse:.4f}
+- Validation RMSE (average): {results_df.iloc[0]["val_rmse_avg"]:.4f}
 - Validation R² (average): {best_r2:.4f}
 
 **Home Goals Prediction**:
@@ -402,7 +402,7 @@ report_md += f"""
 
 **Away Goals Prediction**:
 - MAE: {results_df[results_df['model'] == best_model_name]['val_mae_away'].values[0]:.4f}
-- RMSE: {results_df[results_df['model'] == best_model_name']['val_rmse_away'].values[0]:.4f}
+- RMSE: {results_df[results_df['model'] == best_model_name]['val_rmse_away'].values[0]:.4f}
 - R²: {results_df[results_df['model'] == best_model_name]['val_r2_away'].values[0]:.4f}
 
 ---
