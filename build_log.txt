@@ -1,0 +1,38 @@
+============================================================
+Building player features...
+============================================================
+C:\Users\Administrator\Desktop\FIFA2026\src\features\player_features.py:144: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df[feat_name] = safe_div(df[src_col], m90)
+C:\Users\Administrator\Desktop\FIFA2026\src\features\player_features.py:190: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["performance_score"] = _composite_score(df)
+C:\Users\Administrator\Desktop\FIFA2026\src\features\player_features.py:193: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df["valid_from_season"] = df["season"].map(_next_season)
+=================================================================
+BUILDING PLAYER FEATURES
+=================================================================
+  Saved C:\Users\Administrator\Desktop\FIFA2026\data\features\player_features.csv  (404 rows x 66 cols)
+  Seasons covered : ['2025/26']
+  Players         : 404
+  Features        : 60 (excl. keys)
+  valid_from      : ['2026/27']
+  Overall null %  : 2.8%
+
+============================================================
+Building team features...
+============================================================
+=================================================================
+BUILDING TEAM FEATURES
+=================================================================
+
+[1] Building per-team rolling features from matches_master...
+  Team-match rows (long format): 6080
+  Saved C:\Users\Administrator\Desktop\FIFA2026\data\features\team_rolling_features.csv  (6080 rows x 93 cols)
+  Rolling feature columns       : 87
+  Leakage check (first match last3 is NaN): False
+
+[2] Building season-level team features from team_season_stats...
+  Saved C:\Users\Administrator\Desktop\FIFA2026\data\features\team_season_features.csv  (160 rows x 64 cols)
+  Seasons x teams : 160
+  Feature columns : 60 (excl. keys + valid_from)
+
+============================================================
