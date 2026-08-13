@@ -118,29 +118,29 @@ def test_predict_endpoint():
     print("TESTING /predict ENDPOINT")
     print("=" * 60)
     
-    # Sample match data
+    # Sample match data with realistic values
     sample_match = {
         "home_team_name": "Arsenal",
         "away_team_name": "Chelsea",
-        "home_goals_last3": 2.0,
-        "home_conceded_last3": 1.0,
-        "away_goals_last3": 1.5,
-        "away_conceded_last3": 1.5,
-        "home_goals_last5": 2.2,
-        "home_conceded_last5": 1.2,
-        "away_goals_last5": 1.8,
-        "away_conceded_last5": 1.4,
-        "home_goals_last10": 2.1,
-        "home_conceded_last10": 1.3,
-        "away_goals_last10": 1.7,
-        "away_conceded_last10": 1.5,
-        "home_season_goals": 35.0,
-        "home_season_conceded": 20.0,
-        "away_season_goals": 28.0,
-        "away_season_conceded": 22.0,
-        "h2h_home_wins": 5,
-        "h2h_away_wins": 3,
-        "h2h_draws": 2
+        "home_goals_last3": 5.0,      # goals for in last 3 matches
+        "home_conceded_last3": 2.0,   # goals against in last 3 matches
+        "away_goals_last3": 4.0,      # away team goals for in last 3
+        "away_conceded_last3": 3.0,   # away team goals against in last 3
+        "home_goals_last5": 8.0,      # goals for in last 5 matches  
+        "home_conceded_last5": 4.0,   # goals against in last 5 matches
+        "away_goals_last5": 7.0,      # away team goals for in last 5
+        "away_conceded_last5": 5.0,   # away team goals against in last 5
+        "home_goals_last10": 15.0,    # goals for in last 10 matches
+        "home_conceded_last10": 8.0,  # goals against in last 10 matches
+        "away_goals_last10": 13.0,    # away team goals for in last 10
+        "away_conceded_last10": 10.0, # away team goals against in last 10
+        "home_season_goals": 45.0,    # total season goals for
+        "home_season_conceded": 25.0, # total season goals against
+        "away_season_goals": 38.0,    # away team total season goals for
+        "away_season_conceded": 30.0, # away team total season goals against
+        "h2h_home_wins": 5,           # head-to-head home wins
+        "h2h_away_wins": 3,           # head-to-head away wins  
+        "h2h_draws": 2                # head-to-head draws
     }
     
     result = test_endpoint("POST", "/predict", sample_match)
@@ -228,22 +228,22 @@ def test_bulk_prediction():
             {
                 "home_team_name": "Arsenal",
                 "away_team_name": "Chelsea",
-                "home_goals_last3": 2.0,
-                "home_conceded_last3": 1.0,
-                "away_goals_last3": 1.5,
-                "away_conceded_last3": 1.5,
-                "home_goals_last5": 2.2,
-                "home_conceded_last5": 1.2,
-                "away_goals_last5": 1.8,
-                "away_conceded_last5": 1.4,
-                "home_goals_last10": 2.1,
-                "home_conceded_last10": 1.3,
-                "away_goals_last10": 1.7,
-                "away_conceded_last10": 1.5,
-                "home_season_goals": 35.0,
-                "home_season_conceded": 20.0,
-                "away_season_goals": 28.0,
-                "away_season_conceded": 22.0,
+                "home_goals_last3": 5.0,
+                "home_conceded_last3": 2.0,
+                "away_goals_last3": 4.0,
+                "away_conceded_last3": 3.0,
+                "home_goals_last5": 8.0,
+                "home_conceded_last5": 4.0,
+                "away_goals_last5": 7.0,
+                "away_conceded_last5": 5.0,
+                "home_goals_last10": 15.0,
+                "home_conceded_last10": 8.0,
+                "away_goals_last10": 13.0,
+                "away_conceded_last10": 10.0,
+                "home_season_goals": 45.0,
+                "home_season_conceded": 25.0,
+                "away_season_goals": 38.0,
+                "away_season_conceded": 30.0,
                 "h2h_home_wins": 5,
                 "h2h_away_wins": 3,
                 "h2h_draws": 2
@@ -251,22 +251,22 @@ def test_bulk_prediction():
             {
                 "home_team_name": "Manchester United",
                 "away_team_name": "Liverpool",
-                "home_goals_last3": 1.8,
-                "home_conceded_last3": 1.2,
-                "away_goals_last3": 2.5,
-                "away_conceded_last3": 0.8,
-                "home_goals_last5": 1.9,
-                "home_conceded_last5": 1.1,
-                "away_goals_last5": 2.3,
-                "away_conceded_last5": 0.9,
-                "home_goals_last10": 2.0,
-                "home_conceded_last10": 1.2,
-                "away_goals_last10": 2.4,
-                "away_conceded_last10": 1.0,
-                "home_season_goals": 32.0,
-                "home_season_conceded": 25.0,
-                "away_season_goals": 40.0,
-                "away_season_conceded": 15.0,
+                "home_goals_last3": 4.0,
+                "home_conceded_last3": 3.0,
+                "away_goals_last3": 6.0,
+                "away_conceded_last3": 1.0,
+                "home_goals_last5": 7.0,
+                "home_conceded_last5": 5.0,
+                "away_goals_last5": 10.0,
+                "away_conceded_last5": 2.0,
+                "home_goals_last10": 14.0,
+                "home_conceded_last10": 10.0,
+                "away_goals_last10": 20.0,
+                "away_conceded_last10": 5.0,
+                "home_season_goals": 42.0,
+                "home_season_conceded": 35.0,
+                "away_season_goals": 55.0,
+                "away_season_conceded": 18.0,
                 "h2h_home_wins": 3,
                 "h2h_away_wins": 4,
                 "h2h_draws": 3

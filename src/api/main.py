@@ -84,13 +84,13 @@ def load_models_on_startup():
                 "result", "home_goals", "away_goals"
             ]]
         else:
-            # Fallback feature list based on schema
+            # Fallback feature list based on actual dataset columns
             feature_columns = [
-                "home_goals_last3", "home_conceded_last3", "away_goals_last3", "away_conceded_last3",
-                "home_goals_last5", "home_conceded_last5", "away_goals_last5", "away_conceded_last5",
-                "home_goals_last10", "home_conceded_last10", "away_goals_last10", "away_conceded_last10",
-                "home_season_goals", "home_season_conceded", "away_season_goals", "away_season_conceded",
-                "h2h_home_wins", "h2h_away_wins", "h2h_draws"
+                "home_gf_last3", "home_ga_last3", "away_gf_last3", "away_ga_last3",
+                "home_gf_last5", "home_ga_last5", "away_gf_last5", "away_ga_last5",
+                "home_gf_last10", "home_ga_last10", "away_gf_last10", "away_ga_last10",
+                "home_gf_season", "home_ga_season", "away_gf_season", "away_ga_season",
+                "h2h_last3_home_wins", "h2h_last3_away_wins", "h2h_last3_draws"
             ]
         
         logger.info(f"Models loaded successfully. Feature count: {len(feature_columns)}")
@@ -105,27 +105,27 @@ def prepare_features(match_data: MatchFeatures) -> pd.DataFrame:
     # Extract features from match data
     features_dict = {}
     
-    # Map schema fields to feature columns (simplified mapping)
+    # Map schema fields to actual feature columns from training data
     field_mapping = {
-        "home_goals_last3": "home_goals_last3",
-        "home_conceded_last3": "home_conceded_last3", 
-        "away_goals_last3": "away_goals_last3",
-        "away_conceded_last3": "away_conceded_last3",
-        "home_goals_last5": "home_goals_last5",
-        "home_conceded_last5": "home_conceded_last5",
-        "away_goals_last5": "away_goals_last5", 
-        "away_conceded_last5": "away_conceded_last5",
-        "home_goals_last10": "home_goals_last10",
-        "home_conceded_last10": "home_conceded_last10",
-        "away_goals_last10": "away_goals_last10",
-        "away_conceded_last10": "away_conceded_last10",
-        "home_season_goals": "home_season_goals",
-        "home_season_conceded": "home_season_conceded",
-        "away_season_goals": "away_season_goals",
-        "away_season_conceded": "away_season_conceded",
-        "h2h_home_wins": "h2h_home_wins",
-        "h2h_away_wins": "h2h_away_wins", 
-        "h2h_draws": "h2h_draws"
+        "home_goals_last3": "home_gf_last3",
+        "home_conceded_last3": "home_ga_last3", 
+        "away_goals_last3": "away_gf_last3",
+        "away_conceded_last3": "away_ga_last3",
+        "home_goals_last5": "home_gf_last5",
+        "home_conceded_last5": "home_ga_last5",
+        "away_goals_last5": "away_gf_last5", 
+        "away_conceded_last5": "away_ga_last5",
+        "home_goals_last10": "home_gf_last10",
+        "home_conceded_last10": "home_ga_last10",
+        "away_goals_last10": "away_gf_last10",
+        "away_conceded_last10": "away_ga_last10",
+        "home_season_goals": "home_gf_season",
+        "home_season_conceded": "home_ga_season",
+        "away_season_goals": "away_gf_season",
+        "away_season_conceded": "away_ga_season",
+        "h2h_home_wins": "h2h_last3_home_wins",
+        "h2h_away_wins": "h2h_last3_away_wins", 
+        "h2h_draws": "h2h_last3_draws"
     }
     
     # Extract available features
