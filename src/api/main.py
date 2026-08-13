@@ -35,13 +35,55 @@ from src.models.versioning import ModelRegistry
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# FastAPI app
+# FastAPI app with comprehensive documentation
 app = FastAPI(
     title="Premier League ML Prediction API",
-    description="FastAPI backend for Premier League match predictions using ML models",
+    description="""
+## Premier League Match Prediction API
+
+A production-ready FastAPI service that provides ML-powered predictions for Premier League matches.
+
+### Features
+- **Health Monitoring**: Check API operational status
+- **Model Information**: Get details about the active ML model  
+- **Match Predictions**: Predict match outcomes using team statistics
+- **Bulk Predictions**: Process multiple matches efficiently
+
+### Model Information
+- **Algorithm**: Random Forest Regression
+- **Training Data**: Premier League seasons 2018/19 - 2024/25
+- **Features**: 372 statistical features per match
+- **Performance**: MAE ~0.89 goals, suitable for production use
+
+### Data Requirements
+All statistical inputs should represent **totals** (not averages) for the specified time periods:
+- Last 3/5/10 matches: Sum of goals scored/conceded
+- Season totals: Cumulative goals for current season
+- Head-to-head: Historical match outcomes between teams
+
+### Authentication
+No authentication required for this version.
+
+### Rate Limits
+No rate limits currently enforced.
+    """,
     version="1.0.0",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    openapi_tags=[
+        {
+            "name": "System",
+            "description": "Health monitoring and system status endpoints"
+        },
+        {
+            "name": "Model", 
+            "description": "Machine learning model information and metadata"
+        },
+        {
+            "name": "Prediction",
+            "description": "Match prediction endpoints for single and bulk requests"
+        }
+    ]
 )
 
 # Add CORS middleware
@@ -228,12 +270,51 @@ async def startup_event():
 
 
 # API Endpoints
-@app.get("/health", response_model=HealthResponse, tags=["System"])
+@app.get(
+    "/health", 
+    response_model=HealthResponse, 
+    tags=["System"],
+    summary="Health Check",
+    description="Check if the API is operational and responsive",
+    responses={
+        200: {
+            "description": "API is healthy and operational",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "status": "healthy",
+                        "timestamp": "2026-08-12T14:30:00.123456",
+                        "version": "1.0.0"
+                    }
+                }
+            }
+        },
+        500: {
+            "description": "Internal server error",
+            "model": ErrorResponse
+        }
+    }
+)
 async def health_check():
     """
-    Health check endpoint.
+    **Health Check Endpoint**
     
-    Returns API status, timestamp, and version information.
+    Returns the current operational status of the API service.
+    
+    **Use Cases:**
+    - Monitoring and alerting systems
+    - Load balancer health checks  
+    - Service discovery health verification
+    - Uptime monitoring
+    
+    **Response Details:**
+    - `status`: Always "healthy" if API is responding
+    - `timestamp`: Current server time in ISO 8601 format
+    - `version`: Current API version for tracking deployments
+    
+    **No Parameters Required**
+    
+    This endpoint has no dependencies on ML models or external services.
     """
     return HealthResponse(
         status="healthy",
@@ -242,12 +323,65 @@ async def health_check():
     )
 
 
-@app.get("/model-info", response_model=ModelInfoResponse, tags=["Model"])
+@app.get(
+    "/model-info", 
+    response_model=ModelInfoResponse, 
+    tags=["Model"],
+    summary="Get ML Model Information",
+    description="Retrieve metadata about the currently loaded machine learning model",
+    responses={
+        200: {
+            "description": "Model information retrieved successfully",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "model_version": "1.0.0",
+                        "model_type": "Random_Forest",
+                        "training_date": "2026-08-12T21:29:14",
+                        "metrics": {
+                            "val_mae_avg": 0.8889,
+                            "val_r2_avg": 0.0569,
+                            "val_mae_home": 0.8889,
+                            "val_mae_away": 0.8889
+                        },
+                        "feature_count": 372,
+                        "description": "Initial production model - Phase 9 training"
+                    }
+                }
+            }
+        },
+        500: {
+            "description": "Model not loaded or server error",
+            "model": ErrorResponse
+        }
+    }
+)
 async def get_model_info():
     """
-    Get information about the loaded ML model.
+    **ML Model Information Endpoint**
     
-    Returns model version, type, training date, metrics, and description.
+    Returns comprehensive metadata about the currently active machine learning model.
+    
+    **Use Cases:**
+    - Model version tracking and deployment verification
+    - Performance monitoring and model comparison
+    - Integration validation with downstream systems
+    - Debugging and troubleshooting prediction issues
+    
+    **Response Details:**
+    - `model_version`: Semantic version of the active model
+    - `model_type`: ML algorithm used (Random_Forest, XGBoost, etc.)
+    - `training_date`: When the model was last trained
+    - `metrics`: Validation performance metrics from training
+    - `feature_count`: Number of input features expected by model
+    - `description`: Human-readable model description
+    
+    **Performance Metrics Explained:**
+    - `val_mae_avg`: Mean Absolute Error (lower is better, ~0.89 goals)
+    - `val_r2_avg`: R-squared coefficient (higher is better, ~0.06)
+    - `val_mae_home/away`: MAE for home/away goal predictions separately
+    
+    **No Parameters Required**
     """
     if model_registry is None:
         raise HTTPException(status_code=500, detail="Model not loaded")
@@ -272,12 +406,111 @@ async def get_model_info():
         raise HTTPException(status_code=500, detail=f"Error retrieving model info: {str(e)}")
 
 
-@app.post("/predict", response_model=PredictionResponse, tags=["Prediction"])
+@app.post(
+    "/predict", 
+    response_model=PredictionResponse, 
+    tags=["Prediction"],
+    summary="Predict Single Match Outcome",
+    description="Generate ML prediction for a Premier League match using team statistics",
+    responses={
+        200: {
+            "description": "Prediction generated successfully",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "home_team": "Arsenal",
+                        "away_team": "Chelsea",
+                        "predicted_home_goals": 1.85,
+                        "predicted_away_goals": 1.42,
+                        "predicted_result": "H",
+                        "confidence": {
+                            "home_win": 0.70,
+                            "draw": 0.15,
+                            "away_win": 0.15
+                        }
+                    }
+                }
+            }
+        },
+        422: {
+            "description": "Input validation error",
+            "model": ValidationErrorResponse,
+            "content": {
+                "application/json": {
+                    "example": {
+                        "error": "validation_error",
+                        "message": "Input validation failed",
+                        "validation_errors": [
+                            {
+                                "field": "home_goals_last3",
+                                "message": "ensure this value is greater than or equal to 0",
+                                "value": -1.0
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        500: {
+            "description": "Model prediction error or server error",
+            "model": ErrorResponse
+        }
+    }
+)
 async def predict_match(match: MatchFeatures):
     """
-    Predict the outcome of a single match.
+    **Single Match Prediction Endpoint**
     
-    Takes match features and returns predicted goals and result.
+    Generates a machine learning prediction for a Premier League match using team statistics.
+    
+    **Required Input Features:**
+    
+    All goal-related fields should be **totals** (not averages) for the specified period:
+    
+    **Recent Form (Last 3 Matches):**
+    - `home_goals_last3`: Total goals scored by home team
+    - `home_conceded_last3`: Total goals conceded by home team  
+    - `away_goals_last3`: Total goals scored by away team
+    - `away_conceded_last3`: Total goals conceded by away team
+    
+    **Medium Form (Last 5 Matches):**
+    - `home_goals_last5`: Total goals scored by home team
+    - `home_conceded_last5`: Total goals conceded by home team
+    - `away_goals_last5`: Total goals scored by away team  
+    - `away_conceded_last5`: Total goals conceded by away team
+    
+    **Long Form (Last 10 Matches):**
+    - `home_goals_last10`: Total goals scored by home team
+    - `home_conceded_last10`: Total goals conceded by home team
+    - `away_goals_last10`: Total goals scored by away team
+    - `away_conceded_last10`: Total goals conceded by away team
+    
+    **Season Statistics:**
+    - `home_season_goals`: Cumulative goals scored this season
+    - `home_season_conceded`: Cumulative goals conceded this season
+    - `away_season_goals`: Cumulative goals scored this season  
+    - `away_season_conceded`: Cumulative goals conceded this season
+    
+    **Head-to-Head History:**
+    - `h2h_home_wins`: Historical home wins between these teams
+    - `h2h_away_wins`: Historical away wins between these teams
+    - `h2h_draws`: Historical draws between these teams
+    
+    **Prediction Output:**
+    - `predicted_home_goals`: Expected goals for home team (0-10 range)
+    - `predicted_away_goals`: Expected goals for away team (0-10 range)  
+    - `predicted_result`: Match outcome (H=Home win, D=Draw, A=Away win)
+    - `confidence`: Probability scores for each possible outcome
+    
+    **Example Scenario:**
+    Arsenal (home) vs Chelsea (away) where Arsenal has scored 5 goals and conceded 2 
+    in their last 3 matches, while Chelsea has scored 4 and conceded 3.
+    
+    **Data Quality Notes:**
+    - All numeric fields must be non-negative
+    - Team names should match standard Premier League team names
+    - Historical data should reflect actual match records where possible
+    - Missing or unrealistic data may impact prediction accuracy
     """
     if home_model is None or away_model is None:
         raise HTTPException(status_code=500, detail="Models not loaded")
@@ -312,12 +545,98 @@ async def predict_match(match: MatchFeatures):
         raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
 
 
-@app.post("/predict/bulk", response_model=BulkPredictionResponse, tags=["Prediction"])
+@app.post(
+    "/predict/bulk", 
+    response_model=BulkPredictionResponse, 
+    tags=["Prediction"],
+    summary="Predict Multiple Match Outcomes",
+    description="Generate ML predictions for multiple Premier League matches in a single request",
+    responses={
+        200: {
+            "description": "Bulk predictions generated successfully",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "predictions": [
+                            {
+                                "home_team": "Arsenal",
+                                "away_team": "Chelsea", 
+                                "predicted_home_goals": 1.85,
+                                "predicted_away_goals": 1.42,
+                                "predicted_result": "H",
+                                "confidence": {"home_win": 0.70, "draw": 0.15, "away_win": 0.15}
+                            },
+                            {
+                                "home_team": "Manchester United",
+                                "away_team": "Liverpool",
+                                "predicted_home_goals": 1.23,
+                                "predicted_away_goals": 2.17,
+                                "predicted_result": "A", 
+                                "confidence": {"home_win": 0.20, "draw": 0.25, "away_win": 0.55}
+                            }
+                        ],
+                        "summary": {
+                            "total_matches": 2,
+                            "avg_home_goals": 1.54,
+                            "avg_away_goals": 1.80,
+                            "predicted_results": {"H": 1, "D": 0, "A": 1},
+                            "home_wins_percentage": 50.0,
+                            "draws_percentage": 0.0,
+                            "away_wins_percentage": 50.0
+                        }
+                    }
+                }
+            }
+        },
+        422: {
+            "description": "Input validation error", 
+            "model": ValidationErrorResponse
+        },
+        500: {
+            "description": "Model prediction error or server error",
+            "model": ErrorResponse
+        }
+    }
+)
 async def predict_bulk_matches(bulk_request: BulkMatchFeatures):
     """
-    Predict outcomes for multiple matches.
+    **Bulk Match Prediction Endpoint**
     
-    Takes a list of matches and returns predictions for all.
+    Processes multiple match predictions efficiently in a single API request.
+    
+    **Input Format:**
+    - `matches`: Array of match objects (1-100 matches per request)
+    - Each match follows the same format as single prediction endpoint
+    
+    **Batch Processing Benefits:**
+    - Reduced API overhead for multiple predictions
+    - Consistent processing timestamp for related matches
+    - Summary statistics across all matches in the batch
+    
+    **Response Format:**
+    - `predictions`: Array of individual match predictions
+    - `summary`: Aggregate statistics for the entire batch
+    
+    **Summary Statistics Include:**
+    - `total_matches`: Number of matches processed
+    - `avg_home_goals`: Average predicted home goals across all matches
+    - `avg_away_goals`: Average predicted away goals across all matches
+    - `predicted_results`: Count of H/D/A outcomes predicted
+    - `home_wins_percentage`: Percentage of matches predicted as home wins
+    - `draws_percentage`: Percentage of matches predicted as draws  
+    - `away_wins_percentage`: Percentage of matches predicted as away wins
+    
+    **Limits:**
+    - Maximum 100 matches per request
+    - Minimum 1 match per request
+    - Each match validated independently
+    - Failed matches do not affect successful ones
+    
+    **Use Cases:**
+    - Gameweek prediction batches
+    - Tournament bracket predictions
+    - Season simulation and analysis
+    - Comparative team analysis
     """
     if home_model is None or away_model is None:
         raise HTTPException(status_code=500, detail="Models not loaded")
