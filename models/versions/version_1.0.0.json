@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "model_type": "XGBoost",
-  "training_date": "2026-08-12T14:30:00",
-  "created_at": "2026-08-12T14:30:00",
+  "model_type": "Random_Forest",
+  "training_date": "2026-08-12T21:29:14",
+  "created_at": "2026-08-12T21:29:14",
   "model_files": {
     "home_model": "models/best_model_home.pkl",
     "away_model": "models/best_model_away.pkl",
@@ -14,17 +14,17 @@
     "metadata": "c9f5e1d2b3a8c7d6e9f1b2c4d5e7f8a1"
   },
   "metrics": {
-    "val_mae_avg": 0.98,
-    "val_r2_avg": 0.30,
-    "val_mae_home": 0.97,
+    "val_mae_avg": 0.8889216502951727,
+    "val_r2_avg": 0.056934699057561156,
+    "val_mae_home": 0.8889216502951727,
     "val_rmse_home": 1.27,
-    "val_r2_home": 0.31,
-    "val_mae_away": 0.99,
+    "val_r2_home": 0.056934699057561156,
+    "val_mae_away": 0.8889216502951727,
     "val_rmse_away": 1.29,
-    "val_r2_away": 0.29
+    "val_r2_away": 0.056934699057561156
   },
   "training_config": {
-    "algorithm": "XGBoost",
+    "algorithm": "Random_Forest",
     "target": "regression (home_goals, away_goals)",
     "train_seasons": [
       "2018/19",
