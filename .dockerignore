@@ -1,0 +1,92 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+test_output.txt
+
+# Documentation (exclude from container, use mounted volumes if needed)
+*.md
+!requirements.txt
+
+# Raw data files (too large, not needed for API)
+*.csv
+!data/features/match_features.csv
+E0*.csv
+epl-*.csv
+logs_*.csv
+players_data_*.csv
+
+# Logs and temporary files
+*.log
+*.txt
+!requirements.txt
+*.tmp
+*.bak
+
+# Build artifacts
+build_log.txt
+run_features_err.txt
+run_features_out.txt
+
+# Development scripts
+test_*.py
+run_*.bat
+run_*.py
+audit_wrapper.py
+check_deps*.py
+validate_features.py
+play_df.py
+
+# Outputs (can be regenerated)
+outputs/
+docs/
+
+# Phase documentation
+PHASE_*.md
+PROJECT_*.md
+API_DOCUMENTATION.md
+api_test_results.md
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Specific large files not needed
+premier_league_player_model.pkl
