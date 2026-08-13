@@ -440,7 +440,6 @@ The {best_model_name} model was selected based on validation performance. It ach
 
 ---
 
-Generated: {datetime.now().isoformat()}
 """
 
 report_path = os.path.join(OUTPUTS_DIR, "model_selection_report.md")

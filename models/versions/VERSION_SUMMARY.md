@@ -2,8 +2,8 @@
 
 **Version**: 1.0.0  
 **Status**: Active  
-**Model Type**: XGBoost  
-**Training Date**: 2026-08-12T14:30:00  
+**Model Type**: Random_Forest  
+**Training Date**: 2026-08-12T21:29:14  
 
 ---
 
@@ -29,24 +29,24 @@
 ## Performance Metrics
 
 ### Overall
-- **Validation MAE (avg)**: 0.9800 goals
-- **Validation R² (avg)**: 0.3000
+- **Validation MAE (avg)**: 0.8889 goals
+- **Validation R² (avg)**: 0.0569
 
 ### Home Goals Model
-- **MAE**: 0.9700
-- **RMSE**: 1.2700
-- **R²**: 0.3100
+- **MAE**: 0.8889
+- **RMSE**: 1.27
+- **R²**: 0.0569
 
 ### Away Goals Model
-- **MAE**: 0.9900
-- **RMSE**: 1.2900
-- **R²**: 0.2900
+- **MAE**: 0.8889
+- **RMSE**: 1.29
+- **R²**: 0.0569
 
 ---
 
 ## Training Configuration
 
-- **Algorithm**: XGBoost
+- **Algorithm**: Random_Forest
 - **Target**: regression (home_goals, away_goals)
 - **Train Seasons**: 2018/19, 2019/20, 2020/21, 2021/22, 2022/23, 2023/24, 2024/25
 - **Validation Seasons**: 2025/26
@@ -83,7 +83,7 @@
 
 | Version | Date | Model Type | MAE | R² | Status |
 |---------|------|------------|-----|----|----|
-| 1.0.0 | 2026-08-12 | XGBoost | 0.9800 | 0.3000 | Active |
+| 1.0.0 | 2026-08-12 | Random_Forest | 0.8889 | 0.0569 | Active |
 
 ---
 
@@ -125,6 +125,3 @@ To create version 2.0.0:
 2. Document breaking changes
 3. Register as major version update
 
----
-
-Generated: 2026-08-12T16:45:00

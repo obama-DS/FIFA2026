@@ -706,8 +706,6 @@ To create version 2.0.0:
 3. Register as major version update
 
 ---
-
-Generated: {datetime.now().isoformat()}
 """
     
     with open(summary_path, "w") as f:

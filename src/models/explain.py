@@ -624,7 +624,6 @@ The models learn that:
 
 ---
 
-Generated: {datetime.now().isoformat()}
 """
         
         report_path = os.path.join(EXPLAIN_DIR, "explainability_report.md")
