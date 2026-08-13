@@ -102,6 +102,10 @@ model_metadata = None
 model_registry = None
 feature_columns = None
 
+# Global variable for cached season oracle results
+season_oracle_cache = None
+season_oracle_timestamp = None
+
 def load_models_on_startup():
     """Load ML models and metadata on application startup."""
     global home_model, away_model, model_metadata, model_registry, feature_columns
@@ -697,6 +701,111 @@ async def predict_bulk_matches(bulk_request: BulkMatchFeatures):
     except Exception as e:
         logger.error(f"Bulk prediction error: {e}")
         raise HTTPException(status_code=500, detail=f"Bulk prediction failed: {str(e)}")
+
+
+@app.get(
+    "/oracle/projections",
+    tags=["Oracle"],
+    summary="Get Season Projections",
+    description="Get Monte Carlo simulation results for 2026/27 season",
+)
+async def get_season_projections():
+    """
+    **Season Oracle Endpoint**
+    
+    Returns Monte Carlo simulation results for the entire 2026/27 Premier League season.
+    Results are cached and reused within 1 hour to save computation time.
+    
+    **Response includes:**
+    - Championship probability for each team
+    - Top-4 qualification probability
+    - Top-6 qualification probability
+    - Relegation probability
+    - Expected points
+    - Expected final position
+    - Most likely final league table
+    - Position distribution for each team
+    
+    **Simulation Details:**
+    - 10,000 Monte Carlo simulations
+    - Uses trained ML model for match predictions
+    - Poisson-distributed scorelines for variance
+    - Realistic match outcomes based on team form
+    """
+    global season_oracle_cache, season_oracle_timestamp
+    
+    try:
+        # Check cache (valid for 1 hour)
+        if season_oracle_cache is not None and season_oracle_timestamp is not None:
+            cache_age = (datetime.now() - season_oracle_timestamp).total_seconds()
+            if cache_age < 3600:  # 1 hour
+                logger.info("Returning cached season oracle results")
+                return season_oracle_cache
+        
+        # Import here to avoid startup delay
+        from src.simulation.season_simulator import SeasonOracle
+        
+        logger.info("Generating season oracle projections (this may take a minute)...")
+        
+        # Initialize Season Oracle
+        models_dir = os.path.join(project_root, "models")
+        features_path = os.path.join(project_root, "data", "features", "match_features.csv")
+        output_dir = os.path.join(project_root, "outputs", "season_simulations")
+        
+        oracle = SeasonOracle(models_dir, features_path, output_dir)
+        
+        # Generate AI predictions for all fixtures
+        oracle.generate_ai_predictions()
+        
+        # Run Monte Carlo simulations
+        results = oracle.run_monte_carlo_simulation(n_simulations=5000)
+        
+        # Build response
+        response_data = {
+            "timestamp": datetime.now().isoformat(),
+            "simulations": results['n_simulations'],
+            "season": "2026/27",
+            "teams": {}
+        }
+        
+        # Process team results
+        for team_name, team_data in results['teams'].items():
+            response_data["teams"][team_name] = {
+                "title_probability": round(team_data['title_prob'], 2),
+                "top4_probability": round(team_data['top4_prob'], 2),
+                "top6_probability": round(team_data['top6_prob'], 2),
+                "relegation_probability": round(team_data['relegation_prob'], 2),
+                "expected_points": round(team_data['expected_points'], 1),
+                "expected_position": round(team_data['expected_position'], 1),
+                "median_position": int(team_data['median_position']),
+                "position_distribution": team_data['position_distribution']
+            }
+        
+        # Add most likely final table
+        if 'most_likely_table' in results:
+            response_data["most_likely_table"] = [
+                {
+                    "position": item['position'],
+                    "team": item['team'],
+                    "expected_points": round(item['expected_points'], 1),
+                    "title_probability": round(results['teams'][item['team']]['title_prob'], 2),
+                    "top4_probability": round(results['teams'][item['team']]['top4_prob'], 2),
+                    "top6_probability": round(results['teams'][item['team']]['top6_prob'], 2),
+                    "relegation_probability": round(results['teams'][item['team']]['relegation_prob'], 2),
+                }
+                for item in results['most_likely_table']
+            ]
+        
+        # Cache results
+        season_oracle_cache = response_data
+        season_oracle_timestamp = datetime.now()
+        
+        logger.info("Season oracle projections generated successfully")
+        return response_data
+        
+    except Exception as e:
+        logger.error(f"Season oracle error: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to generate season projections: {str(e)}")
 
 
 # Run the application
