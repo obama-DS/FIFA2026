@@ -1,7 +1,7 @@
 # Integration Report
 
 How the raw datasets were connected into logical master datasets in `data/master/`.
-Generated 2026-08-12. Raw source files were never modified.
+Raw source files were never modified.
 
 ---
 
