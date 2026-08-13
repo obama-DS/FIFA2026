@@ -84,9 +84,10 @@ class MatchProbabilityEngine:
         )
         
         # Determine most likely result
-        if home_win_prob > draw_prob and home_win_prob > away_win_prob:
+        max_prob = max(home_win_prob, draw_prob, away_win_prob)
+        if home_win_prob == max_prob:
             most_likely_result = 'H'
-        elif away_win_prob > draw_prob and away_win_prob > home_win_prob:
+        elif away_win_prob == max_prob:
             most_likely_result = 'A'
         else:
             most_likely_result = 'D'
