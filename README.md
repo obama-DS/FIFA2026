@@ -438,9 +438,6 @@ This project is for educational and research purposes.
 - [🔍 Explainability](outputs/explainability/explainability_report.md)
 - [📚 Documentation](docs/)
 - [🐛 Known Issues](PROJECT_AUDIT_REPORT.md#critical-issues-found)
-
 ---
-
-**Status**: ✅ **PRODUCTION READY** (12/12 phases complete)
 
 Built with ❤️ for football analytics
